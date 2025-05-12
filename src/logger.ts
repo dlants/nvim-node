@@ -11,7 +11,7 @@ export function createLogger(client: Client, level: LogLevel, file?: string) {
         transports: [
             new winston.transports.File({
                 filename,
-                options: { flags: 'w' }  // 'w' flag truncates the file if it exists
+                options: { flags: "w" }, // 'w' flag truncates the file if it exists
             }),
         ],
     });
